@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ahorcado Challenge 2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricky Arias" />
+    <meta name="reply-to" content="ricky.arias@outlook.com" />
+    <meta name="copyright" content="2023" />
+    <meta name="description" content="Ejercicio Nº2 de ONE-Alura-Challenge. En este caso el el juego del ahoracado" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" class="logo">
+    </header>
+    <main>
+        <article id="article--Principal">
+            <div class="container--h">
+                <button class="btn-azul btn-iniciar" id="button--IniciarJuego">Iniciar Juego</button>
+                <button class="btn-blanco btn-palabra" id="button--AgregarPalabra">Agregar palabra</button>
+            </div>
+        </article>
+
+        <article id="article--AgregarPalabra" class="ocultar">
+            <div class="container--h">
+                <input class="text-input" type="text" id="input--NuevaPalabra" maxlength="8"
+                    placeholder="Escriba una palabra">
+                <div class="container--v">
+                    <img src="images/exclamacion.png" class="img-alerta">
+                    <p class="label" for="input-texto"> Máx. 8 caracteres</p>
+                </div>
+                <div class="container--v">
+                    <button class="btn-azul" id="button--Guardar">Guardar y Empezar</button>
+                    <button class="btn-blanco btn-salir" id="button--Cancelar">Cancelar</button>
+                </div>
+            </div>
+        </article>
+
+        <article id="article--Juego" class="ocultar">
+            <div class="container--h">
+                <canvas id="display" height="600px" width="800px"></canvas>
+                <div class="container--v" id="menu--Horizontal">
+                    <button class="btn-azul" id="button--NuevoJuego">Nuevo Juego</button>
+                    <button class="btn-blanco" id="button--Salir">Salir</button>
+                </div>
+                <div class="container--v" id="menu--Horizontal-Off">
+                    <button class="btn-off" id="button--NuevoJuego-Off">Nuevo Juego</button>
+                    <button class="btn-off" id="button--Salir-Off">Salir</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="js/class/tablero.js"></script>
+    <script src="js/class/palabra.js"></script>
+    <script src="js/class/juego.js"></script>
+    <script src="js/class/main.js"></script>
+</body>
+
+</html>
