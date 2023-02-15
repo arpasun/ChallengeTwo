@@ -115,14 +115,9 @@ class Tablero {
     _tablero.lineCap = "round";
     _tablero.lineJoin = "round";
     _tablero.fillStyle = "green";
-    _tablero.fillText("¡¡¡ Felicidades Ganaste !!!", 200, 500);
-    //_tablero.fillText("Ganaste,", 350, 320);
+    _tablero.fillText("¡¡¡ Felicidades Ganaste !!!", 200, 50);
     document.getElementById("menu--Horizontal").className = "ocultar";
     document.getElementById("menu--Horizontal-Off").className = "mostrar";
-    //document.getElementById("button--NuevoJuego").className = "ocultar";
-    //document.getElementById("button--NuevoJuego-Off").className = "mostrar";
-    //alert('Felicidades, Ganaste');
-
   }
 
   perdiste() {
@@ -134,6 +129,5 @@ class Tablero {
     _tablero.fillText("Perdiste!", 330, 50);
     document.getElementById("menu--Horizontal").className = "ocultar";
     document.getElementById("menu--Horizontal-Off").className = "mostrar";
-    //alert('¡¡¡ Perdiste !!!');
   }
 }
